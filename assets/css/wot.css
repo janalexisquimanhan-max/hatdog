@@ -1,0 +1,197 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background-color: #c7c7c7; /* Slightly deeper gray */
+  color: #1a1a1a; /* Darker text */
+  margin: 0;
+  padding-top: 70px;
+}
+
+a {
+  color: #4177c2; /* Slightly darker medium blue */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2d5fa2; /* Deeper hover blue */
+}
+
+.navbar {
+  background-color: #323f5d !important; /* Slightly deeper slate blue */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #94b2e2 !important; /* Deeper light blue */
+}
+
+.navbar-nav .nav-link.active {
+  color: #94b2e2 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #94b2e2;
+}
+
+#contact p i {
+  margin-right: 9px;
+  color: #4177c2;
+}
+
+.section {
+  padding: 50px 0;
+  background-color: #e2e2e2; 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 100px;
+
+
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #323f5d; /* Match navbar darker */
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #a7b8c9, #8d9db0, #6f819d); /* Darker gradient */
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: #94b2e2; /* Slightly deeper accent */
+}
+
+.education-item {
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.education-item h3 {
+  color: #4177c2;
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+}
+
+html {
+  scroll-padding-top: 80px; 
+}
+/* Hobby section thumbnails */
+.hobby-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hobby-thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* Modal images */
+.modal-body img {
+  border-radius: 8px;
+}
+
+/* Carousel controls visibility (optional cleaner look) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Optional: Better spacing inside modals */
+.modal-body p {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #394867; /* matches your site's color scheme */
+}
+
+/* Responsive thumbnails */
+@media (max-width: 768px) {
+  .hobby-thumb {
+    height: 150px;
+  }
+}
+
+
